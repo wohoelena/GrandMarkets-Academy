@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>量化 EA 编程学院 | MQL5、MT5 EA 与 Python 研究</title>
+  <meta name="description" content="学习 MQL5、MT5 EA、Python 量化、策略回测、研究日志、模型治理与自动化交易系统风险边界。">
+  <meta name="keywords" content="量化交易课程, MQL5, MT5 EA, Python 量化, 回测, 自动化交易, 模型治理">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="author" content="Grand Markets Academy">
+  <meta name="theme-color" content="#f6c517">
+  <link rel="preload" as="image" href="assets/gm-logo-full.png">
+  <link rel="canonical" href="https://www.grandmarkets.com/academy/quant.html?lang=zh">
+  <link rel="alternate" hreflang="zh-CN" href="https://www.grandmarkets.com/academy/quant.html?lang=zh">
+  <link rel="alternate" hreflang="en" href="https://www.grandmarkets.com/academy/quant.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.grandmarkets.com/academy/quant.html?lang=en">
+  <meta property="og:site_name" content="Grand Markets Academy">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="量化 EA 编程学院 | MQL5、MT5 EA 与 Python 研究">
+  <meta property="og:description" content="学习 MQL5、MT5 EA、Python 量化、策略回测、研究日志、模型治理与自动化交易系统风险边界。">
+  <meta property="og:url" content="https://www.grandmarkets.com/academy/quant.html?lang=zh">
+  <meta property="og:image" content="https://www.grandmarkets.com/academy/assets/gm-logo-full.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="量化 EA 编程学院 | MQL5、MT5 EA 与 Python 研究">
+  <meta name="twitter:description" content="学习 MQL5、MT5 EA、Python 量化、策略回测、研究日志、模型治理与自动化交易系统风险边界。">
+  <meta name="twitter:image" content="https://www.grandmarkets.com/academy/assets/gm-logo-full.png">
+  <script type="application/ld+json" data-seo-json>{"@context":"https://schema.org","@graph":[{"@type":"EducationalOrganization","@id":"https://www.grandmarkets.com/academy/#organization","name":"Grand Markets Academy","url":"https://www.grandmarkets.com/academy/","logo":"https://www.grandmarkets.com/academy/assets/gm-logo-full.png","sameAs":["https://www.grandmarkets.com/"],"slogan":"Your Vision. Global Execution."},{"@type":"WebSite","@id":"https://www.grandmarkets.com/academy/#website","name":"Grand Markets Academy","url":"https://www.grandmarkets.com/academy/","publisher":{"@id":"https://www.grandmarkets.com/academy/#organization"},"inLanguage":"zh-CN"},{"@type":"WebPage","@id":"https://www.grandmarkets.com/academy/quant.html?lang=zh#webpage","url":"https://www.grandmarkets.com/academy/quant.html?lang=zh","name":"量化 EA 编程学院 | MQL5、MT5 EA 与 Python 研究","headline":"量化学院","description":"学习 MQL5、MT5 EA、Python 量化、策略回测、研究日志、模型治理与自动化交易系统风险边界。","inLanguage":"zh-CN","isPartOf":{"@id":"https://www.grandmarkets.com/academy/#website"},"publisher":{"@id":"https://www.grandmarkets.com/academy/#organization"}},{"@type":"BreadcrumbList","@id":"https://www.grandmarkets.com/academy/quant.html?lang=zh#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.grandmarkets.com/academy/?lang=zh"},{"@type":"ListItem","position":2,"name":"量化学院","item":"https://www.grandmarkets.com/academy/quant.html?lang=zh"}]},{"@type":"Course","@id":"https://www.grandmarkets.com/academy/quant.html?lang=zh#course","name":"量化学院","description":"学习 MQL5、MT5 EA、Python 量化、策略回测、研究日志、模型治理与自动化交易系统风险边界。","provider":{"@id":"https://www.grandmarkets.com/academy/#organization"},"educationalLevel":"Professional education","inLanguage":"zh-CN","teaches":"量化交易课程, MQL5, MT5 EA, Python 量化, 回测, 自动化交易, 模型治理"}]}</script>
+  <link rel="stylesheet" href="styles.css?v=20260602-enfont03">
+</head>
+<body>
+  <a class="skip-link" href="#main-content"><span data-lang-panel="zh">跳转到主要内容</span><span data-lang-panel="en">Skip to main content</span></a>
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="index.html"><img class="brand-logo-full" src="assets/gm-logo-full.png" alt="Grand Markets" width="900" height="342"><span class="brand-academy">Academy</span></a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-menu-toggle>☰</button>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html">首页</a><a href="rg146.html">RG146</a><a href="quant.html">量化学院</a><a href="traders.html">交易员训练</a><a href="knowledge.html">知识库</a><a href="events.html">活动社群</a><a href="compliance.html">合规中心</a><a href="about.html">About Us</a>
+      </div>
+      <a class="nav-cta" href="#contact">学习评估</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero compact">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span data-lang-panel="zh">MQL5 · MT5 EA · Python 研究</span><span data-lang-panel="en">MQL5 · MT5 EA · Python Research</span></span>
+          <h1><span data-lang-panel="zh">量化 EA 编程学院</span><span data-lang-panel="en">Quant EA Programming Academy</span></h1>
+          <p><span data-lang-panel="zh">把交易想法拆成研究假设、数据定义、EA 架构、Python 实验、回测边界和模型治理，训练学员建立可审计、可复盘的系统化研究能力。</span><span data-lang-panel="en">Translate trading ideas into research hypotheses, data definitions, EA architecture, Python experiments, backtest boundaries and model governance so learners build auditable, reviewable system-research capability.</span></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research-pipeline"><span data-lang-panel="zh">进入研究管线</span><span data-lang-panel="en">Enter Research Pipeline</span></a>
+            <a class="button secondary" href="#ea-architecture"><span data-lang-panel="zh">查看 EA 架构</span><span data-lang-panel="en">View EA Architecture</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-strip" aria-label="Quant next steps">
+      <div class="section-inner">
+        <div class="journey-bar three">
+          <span class="journey-label"><span data-lang-panel="zh">研究路径</span><span data-lang-panel="en">Research Flow</span></span>
+          <a href="#research-pipeline"><strong><span data-lang-panel="zh">先定研究流程</span><span data-lang-panel="en">Define Research Flow</span></strong><em><span data-lang-panel="zh">假设、数据、回测和治理先对齐</span><span data-lang-panel="en">Align hypothesis, data, testing and governance</span></em></a>
+          <a href="#ea-architecture"><strong><span data-lang-panel="zh">再拆 EA 架构</span><span data-lang-panel="en">Map EA Architecture</span></strong><em><span data-lang-panel="zh">信号、风控、订单和日志分层</span><span data-lang-panel="en">Separate signal, risk, orders and logging</span></em></a>
+          <a href="#python-research"><strong><span data-lang-panel="zh">进入 Python 研究</span><span data-lang-panel="en">Enter Python Research</span></strong><em><span data-lang-panel="zh">用数据表、实验日志和样本外验证复盘</span><span data-lang-panel="en">Use data tables, logs and out-of-sample checks</span></em></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>课程从可操作的研究任务开始，而不是停留在概念解释</h2>
+          <p>课程突出可复盘的实操流程，适合希望理解 EA、自动化交易和编程研究方法的学习者。</p>
+        </div>
+        <div class="grid four">
+          <article class="card"><span class="kicker">01</span><h3>量化交易入门</h3><p>认识交易逻辑、策略假设、风险控制、回测和实盘之间的差异。</p></article>
+          <article class="card"><span class="kicker">02</span><h3>MQL5 / MT5 EA</h3><p>从语法、指标调用、订单管理到完成一个基础 EA。</p></article>
+          <article class="card"><span class="kicker">03</span><h3>Python 量化策略</h3><p>学习数据读取、指标计算、策略回测和信号生成。</p></article>
+          <article class="card"><span class="kicker">04</span><h3>策略案例作品集</h3><p>展示学员 EA 案例和策略思路，形成可交流的学习成果。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research-pipeline" class="depth-section alt">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <span class="eyebrow">研究管线</span>
+            <h2>把量化学习拆成可审计研究流程</h2>
+            <p>真正有训练价值的量化项目，不是先追问收益结果，而是先确认假设是否清楚、数据是否干净、执行假设是否合理、风险是否可解释。</p>
+          </div>
+          <div class="table-wrap knowledge-matrix">
+            <table>
+              <thead><tr><th>研究层级</th><th>核心问题</th><th>训练动作</th><th>可交付成果</th></tr></thead>
+              <tbody>
+                <tr><td>假设定义</td><td>策略想捕捉趋势、均值回归、波动扩张还是事件反应？</td><td>写出交易逻辑、适用市场状态和失效条件。</td><td>研究假设卡</td></tr>
+                <tr><td>数据规格</td><td>使用什么品种、周期、报价来源、样本区间和清洗规则？</td><td>建立数据字典，标注缺失值、异常价格和时区处理。</td><td>数据审查表</td></tr>
+                <tr><td>信号设计</td><td>指标、阈值和过滤条件是否有市场解释？</td><td>区分信号、过滤、仓位和退出规则，避免把所有逻辑揉在一起。</td><td>信号逻辑图</td></tr>
+                <tr><td>回测协议</td><td>是否记录成本、滑点、交易次数、参数敏感和样本外表现？</td><td>固定测试协议，再比较版本，不用结果倒推规则。</td><td>回测协议表</td></tr>
+                <tr><td>执行模拟</td><td>订单类型、点差变化、交易时段和异常情况是否被处理？</td><td>在模拟环境观察执行偏差和错误日志。</td><td>执行复盘记录</td></tr>
+                <tr><td>模型治理</td><td>谁改了模型、为什么改、何时暂停、如何复核？</td><td>维护版本记录、变更说明和风险评审。</td><td>模型治理日志</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <span class="eyebrow">Research Pipeline</span>
+            <h2>Turn quant learning into an auditable research process</h2>
+            <p>A useful quantitative project should not begin with return expectations. It should ask whether the hypothesis is clear, data is clean, execution assumptions are reasonable and risk is explainable.</p>
+          </div>
+          <div class="table-wrap knowledge-matrix">
+            <table>
+              <thead><tr><th>Research Layer</th><th>Core Question</th><th>Training Action</th><th>Deliverable</th></tr></thead>
+              <tbody>
+                <tr><td>Hypothesis</td><td>Does the strategy target trend, mean reversion, volatility expansion or event response?</td><td>Write trading logic, applicable regimes and invalidation conditions.</td><td>Research thesis card</td></tr>
+                <tr><td>Data Specification</td><td>Which instrument, timeframe, quote source, sample and cleaning rules are used?</td><td>Build a data dictionary covering missing values, abnormal prices and time-zone handling.</td><td>Data review sheet</td></tr>
+                <tr><td>Signal Design</td><td>Do indicators, thresholds and filters have a market explanation?</td><td>Separate signal, filter, sizing and exit rules instead of mixing all logic together.</td><td>Signal logic map</td></tr>
+                <tr><td>Backtest Protocol</td><td>Are costs, slippage, trade count, parameter sensitivity and out-of-sample behaviour recorded?</td><td>Fix the testing protocol before comparing versions; do not reverse-engineer rules from outcomes.</td><td>Backtest protocol</td></tr>
+                <tr><td>Execution Simulation</td><td>Are order type, spread variation, trading hours and exceptions handled?</td><td>Observe execution gaps and error logs in a simulated environment.</td><td>Execution review log</td></tr>
+                <tr><td>Model Governance</td><td>Who changed the model, why, when should it pause and how is it reviewed?</td><td>Maintain version records, change notes and risk reviews.</td><td>Model governance log</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depth-section alt">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <h2>策略开发生命周期</h2>
+            <p>量化训练的核心不是寻找万能指标，而是把想法变成可测试、可解释、可复盘的研究流程。</p>
+          </div>
+          <div class="process-rail">
+            <div><span>01</span><strong>提出假设</strong><p>写清楚策略想捕捉的市场行为，例如趋势延续、均值回归或波动扩张。</p></div>
+            <div><span>02</span><strong>定义数据</strong><p>确认品种、周期、数据质量、缺失值处理和样本区间。</p></div>
+            <div><span>03</span><strong>编码执行逻辑</strong><p>把入场、出场、仓位、止损、过滤条件和异常处理写成明确规则。</p></div>
+            <div><span>04</span><strong>回测与压力测试</strong><p>观察交易次数、最大回撤、盈亏分布、参数敏感性和样本外表现。</p></div>
+            <div><span>05</span><strong>风险评审</strong><p>识别过拟合、滑点、流动性、极端行情和实盘执行差异。</p></div>
+            <div><span>06</span><strong>复盘迭代</strong><p>保留研究日志，记录为什么修改、修改后改变了什么、哪些假设仍未被验证。</p></div>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <h2>Strategy Development Lifecycle</h2>
+            <p>The core of quantitative training is not finding a universal indicator. It is turning an idea into a testable, explainable and reviewable research process.</p>
+          </div>
+          <div class="process-rail">
+            <div><span>01</span><strong>State the Hypothesis</strong><p>Describe the market behaviour the strategy aims to capture, such as trend continuation, mean reversion or volatility expansion.</p></div>
+            <div><span>02</span><strong>Define the Data</strong><p>Confirm instruments, timeframe, data quality, missing-value handling and sample period.</p></div>
+            <div><span>03</span><strong>Code Execution Logic</strong><p>Translate entry, exit, sizing, stop, filter conditions and exception handling into explicit rules.</p></div>
+            <div><span>04</span><strong>Backtest and Stress Test</strong><p>Review trade count, drawdown, return distribution, parameter sensitivity and out-of-sample behaviour.</p></div>
+            <div><span>05</span><strong>Risk Review</strong><p>Identify overfitting, slippage, liquidity, extreme regimes and live-execution gaps.</p></div>
+            <div><span>06</span><strong>Review and Iterate</strong><p>Keep a research log explaining why changes were made, what changed and which assumptions remain untested.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ea-architecture" class="depth-section">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <span class="eyebrow">EA 系统架构</span>
+            <h2>EA 不是一个“下单按钮”，而是一套分层交易系统</h2>
+            <p>课程把 MT5 EA 拆成信号、风控、订单、日志和异常处理五个层级，让学员知道代码每一层承担什么责任。</p>
+          </div>
+          <div class="terminal-table">
+            <div class="terminal-row terminal-head"><span>层级</span><span>训练内容</span><strong>复盘重点</strong></div>
+            <div class="terminal-row"><span>数据输入</span><span>读取价格、周期、指标缓存和交易时段，确认数据是否可用。</span><strong>数据完整性</strong></div>
+            <div class="terminal-row"><span>信号层</span><span>把入场条件、过滤条件、退出条件分离，避免信号逻辑混乱。</span><strong>可解释性</strong></div>
+            <div class="terminal-row"><span>风控引擎</span><span>定义单笔风险、最大持仓、连续亏损、暂停和禁止交易条件。</span><strong>风险优先</strong></div>
+            <div class="terminal-row"><span>订单管理</span><span>处理订单类型、价格偏差、止损止盈、修改订单和重复下单防护。</span><strong>执行质量</strong></div>
+            <div class="terminal-row"><span>日志记录</span><span>记录信号触发、订单状态、错误代码、参数版本和手动干预。</span><strong>可追踪性</strong></div>
+            <div class="terminal-row"><span>异常防护</span><span>处理断线、报价异常、点差扩大、新闻时段和超出交易窗口的情况。</span><strong>异常边界</strong></div>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <span class="eyebrow">EA Architecture</span>
+            <h2>An EA is not an order button. It is a layered trading system</h2>
+            <p>The course separates an MT5 EA into signal, risk, order, logging and exception layers so learners understand the responsibility of each code layer.</p>
+          </div>
+          <div class="terminal-table">
+            <div class="terminal-row terminal-head"><span>Layer</span><span>Training Content</span><strong>Review Focus</strong></div>
+            <div class="terminal-row"><span>Data Feed</span><span>Read price, timeframe, indicator buffers and trading sessions; confirm data availability.</span><strong>Data Integrity</strong></div>
+            <div class="terminal-row"><span>Signal Layer</span><span>Separate entry conditions, filters and exits to avoid tangled signal logic.</span><strong>Explainability</strong></div>
+            <div class="terminal-row"><span>Risk Engine</span><span>Define per-trade risk, maximum exposure, losing streak, pause and no-trade conditions.</span><strong>Risk First</strong></div>
+            <div class="terminal-row"><span>Order Manager</span><span>Handle order type, price deviation, stop and target, order modification and duplicate-order protection.</span><strong>Execution Quality</strong></div>
+            <div class="terminal-row"><span>Journal Logger</span><span>Record signal triggers, order status, error codes, parameter versions and manual intervention.</span><strong>Traceability</strong></div>
+            <div class="terminal-row"><span>Exception Guard</span><span>Handle disconnections, abnormal quotes, wider spreads, news windows and trading-session limits.</span><strong>Exception Boundaries</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depth-section">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <h2>回测真实性边界</h2>
+            <p>回测是研究工具，不是未来收益证明。专业训练要让学员知道回测能回答什么，也要知道它不能回答什么。</p>
+          </div>
+          <div class="table-wrap knowledge-matrix">
+            <table>
+              <thead><tr><th>回测可以帮助回答</th><th>回测不能证明</th><th>课程训练动作</th></tr></thead>
+              <tbody>
+                <tr><td>规则在历史样本中是否产生可观察行为。</td><td>策略的未来有效性，或它在任何市场状态下都有效。</td><td>分样本、分市场状态记录表现。</td></tr>
+                <tr><td>参数变化是否导致结果大幅敏感。</td><td>找到一个“最佳参数”就代表找到真实规律。</td><td>做参数敏感性表和样本外观察。</td></tr>
+                <tr><td>交易次数、回撤、盈亏分布和连续亏损是否可接受。</td><td>最大回撤不会在未来被突破。</td><td>加入压力测试和暂停规则。</td></tr>
+                <tr><td>点差、佣金、滑点假设对结果有多大影响。</td><td>模拟成交等同于真实成交。</td><td>记录执行成本假设和异常行情说明。</td></tr>
+                <tr><td>策略假设是否值得继续研究。</td><td>模型可以替代交易纪律和风险管理。</td><td>写策略假设、失效条件和版本日志。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <h2>Truth Boundaries of Backtesting</h2>
+            <p>A backtest is a research tool, not proof of future outcomes. Professional training should teach what backtests can answer and what they cannot prove.</p>
+          </div>
+          <div class="table-wrap knowledge-matrix">
+            <table>
+              <thead><tr><th>Backtests Can Help Answer</th><th>Backtests Cannot Prove</th><th>Course Training Action</th></tr></thead>
+              <tbody>
+                <tr><td>Whether rules produced observable behaviour in historical samples.</td><td>Future effectiveness or effectiveness across every regime.</td><td>Record performance by sample and market regime.</td></tr>
+                <tr><td>Whether parameter changes create material sensitivity.</td><td>That one optimal parameter represents a real market law.</td><td>Build parameter sensitivity and out-of-sample checks.</td></tr>
+                <tr><td>Whether trade count, drawdown, distribution and losing streaks are tolerable.</td><td>That future drawdown will not exceed historical drawdown.</td><td>Add stress tests and pause rules.</td></tr>
+                <tr><td>How spreads, commissions and slippage assumptions affect results.</td><td>That simulated execution equals live execution.</td><td>Document cost assumptions and abnormal market conditions.</td></tr>
+                <tr><td>Whether the strategy hypothesis deserves further research.</td><td>That a model can replace discipline and risk management.</td><td>Write assumptions, invalidation conditions and version logs.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="python-research" class="depth-section alt">
+      <div class="section-inner depth-layout">
+        <div class="depth-copy" data-lang-panel="zh">
+          <span class="eyebrow">Python 研究台</span>
+          <h3>把 Python 训练做成研究台，而不是零散脚本</h3>
+          <p>Python 课程强调数据表结构、实验日志、样本切分、成本假设和复现能力。学员需要能解释每个信号来自哪里、每次修改改变了什么。</p>
+        </div>
+        <div class="depth-copy" data-lang-panel="en">
+          <span class="eyebrow">Python Research Desk</span>
+          <h3>Make Python training a research desk, not scattered scripts</h3>
+          <p>The Python pathway emphasizes data-table structure, experiment logs, sample splits, cost assumptions and reproducibility. Learners should explain where each signal came from and what each change altered.</p>
+        </div>
+        <div class="depth-rows" data-lang-panel="zh">
+          <div class="depth-row"><span>01</span><strong>数据表标准</strong><p>统一时间戳、开高低收、成交量、点差、交易时段和事件标签，先让数据可以被复查。</p></div>
+          <div class="depth-row"><span>02</span><strong>特征与信号</strong><p>把趋势、波动率、突破、均值回归和过滤条件拆成可解释字段，而不是只输出买卖信号。</p></div>
+          <div class="depth-row"><span>03</span><strong>样本切分</strong><p>训练学员理解训练样本、验证样本、样本外观察和时间序列不能随意打乱的原因。</p></div>
+          <div class="depth-row"><span>04</span><strong>成本假设</strong><p>把点差、佣金、滑点、拒单和交易频率写入评估，避免只看毛收益曲线。</p></div>
+          <div class="depth-row"><span>05</span><strong>实验记录</strong><p>每次参数、过滤器、品种或周期变化，都需要记录原因、结果和下一步问题。</p></div>
+        </div>
+        <div class="depth-rows" data-lang-panel="en">
+          <div class="depth-row"><span>01</span><strong>Data Table Standards</strong><p>Standardize timestamp, open-high-low-close, volume, spread, trading session and event labels so data can be reviewed.</p></div>
+          <div class="depth-row"><span>02</span><strong>Features and Signals</strong><p>Separate trend, volatility, breakout, mean reversion and filters into explainable fields rather than only outputting buy/sell signals.</p></div>
+          <div class="depth-row"><span>03</span><strong>Sample Splits</strong><p>Teach why training, validation, out-of-sample observation and time-series ordering should be handled carefully.</p></div>
+          <div class="depth-row"><span>04</span><strong>Cost Assumptions</strong><p>Include spreads, commission, slippage, rejections and trading frequency so evaluation is not based only on gross curves.</p></div>
+          <div class="depth-row"><span>05</span><strong>Experiment Records</strong><p>Every parameter, filter, instrument or timeframe change should record the reason, result and next research question.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="model-governance" class="depth-section">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <span class="eyebrow">模型治理</span>
+            <h2>量化系统的成熟度，体现在知道何时不能用</h2>
+            <p>我们把模型治理做成训练内容：不是让学员迷信自动化，而是让学员知道模型风险、执行风险和解释风险如何被记录、复核和暂停。</p>
+          </div>
+          <div class="glossary-strip risk-strip">
+            <div><strong>过拟合</strong><span>参数过度贴合历史样本，需要用敏感性、样本外和简单基准对照。</span></div>
+            <div><strong>数据泄漏</strong><span>未来信息、重算指标、错误时间戳都可能让测试结果失真。</span></div>
+            <div><strong>生存者偏差</strong><span>只看仍然存在或表现突出的样本，会高估策略稳定性。</span></div>
+            <div><strong>制度切换</strong><span>利率、波动率、流动性和政策环境变化会让历史关系失效。</span></div>
+            <div><strong>执行漂移</strong><span>模拟成交、真实点差、滑点和订单拒绝之间可能存在差距。</span></div>
+            <div><strong>版本漂移</strong><span>频繁修改但没有日志，会让模型失去可解释性和复盘价值。</span></div>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <span class="eyebrow">Model Governance</span>
+            <h2>A mature quant system knows when it should not be used</h2>
+            <p>Model governance is part of the training: learners should not worship automation. They should learn how model risk, execution risk and interpretation risk are recorded, reviewed and paused.</p>
+          </div>
+          <div class="glossary-strip risk-strip">
+            <div><strong>Overfitting</strong><span>Parameters may fit historical samples too closely; sensitivity, out-of-sample checks and simple benchmarks are needed.</span></div>
+            <div><strong>Data Leakage</strong><span>Future information, recalculated indicators and wrong timestamps can distort test results.</span></div>
+            <div><strong>Survivorship Bias</strong><span>Using only surviving or successful samples can overstate strategy stability.</span></div>
+            <div><strong>Regime Shift</strong><span>Changes in rates, volatility, liquidity and policy regimes can invalidate historical relationships.</span></div>
+            <div><strong>Execution Drift</strong><span>Simulated fills may differ from real spreads, slippage and order rejections.</span></div>
+            <div><strong>Version Drift</strong><span>Frequent changes without logs reduce explainability and review value.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>学习成果展示</h2>
+          <p>学习成果以可运行模型、研究记录和复盘报告呈现，强调过程记录与风险说明。</p>
+        </div>
+        <div class="grid three">
+          <a class="article-card" href="topic.html?article=moving-average-ea"><span class="kicker">EA 项目</span><h3>均线交叉策略 EA</h3><p>完成入场、出场、止损、仓位参数和回测记录。</p><div class="tag-row"><span class="tag">MQL5</span><span class="tag">MT5</span><span class="tag">回测</span></div></a>
+          <a class="article-card" href="topic.html?article=python-gold-signal"><span class="kicker">Python 项目</span><h3>黄金价格信号脚本</h3><p>使用 Python 读取数据，计算指标并生成信号观察表。</p><div class="tag-row"><span class="tag">Python</span><span class="tag">XAUUSD</span><span class="tag">信号</span></div></a>
+          <a class="article-card" href="topic.html?article=strategy-review"><span class="kicker">作品集</span><h3>策略复盘报告</h3><p>记录策略假设、测试区间、参数变化和风险说明。</p><div class="tag-row"><span class="tag">报告</span><span class="tag">风险</span><span class="tag">复盘</span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="depth-section">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <h2>交易系统风险复盘清单</h2>
+            <p>每一个 EA 或 Python 脚本都需要同时说明它能做什么、不能做什么，以及在什么条件下应停止使用。</p>
+          </div>
+          <div class="glossary-strip risk-strip">
+            <div><strong>样本风险</strong><span>测试区间是否过短？是否只覆盖一种市场状态？</span></div>
+            <div><strong>参数风险</strong><span>参数轻微变化后结果是否大幅波动？</span></div>
+            <div><strong>执行风险</strong><span>点差、滑点、断线、拒单和交易时段是否被记录？</span></div>
+            <div><strong>资金风险</strong><span>仓位、最大回撤、连续亏损和暂停规则是否清楚？</span></div>
+            <div><strong>解释风险</strong><span>是否把回测结果误读为未来表现？</span></div>
+            <div><strong>治理风险</strong><span>是否有版本记录、复盘负责人和变更说明？</span></div>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <h2>Trading System Risk Review Checklist</h2>
+            <p>Every EA or Python script should explain what it can do, what it cannot do and under what conditions it should stop being used.</p>
+          </div>
+          <div class="glossary-strip risk-strip">
+            <div><strong>Sample Risk</strong><span>Is the test period too short? Does it cover only one market regime?</span></div>
+            <div><strong>Parameter Risk</strong><span>Do small parameter changes materially alter the result?</span></div>
+            <div><strong>Execution Risk</strong><span>Are spreads, slippage, disconnections, rejections and trading hours recorded?</span></div>
+            <div><strong>Capital Risk</strong><span>Are sizing, drawdown, losing streak and pause rules clear?</span></div>
+            <div><strong>Interpretation Risk</strong><span>Is the backtest being misread as future performance?</span></div>
+            <div><strong>Governance Risk</strong><span>Are version records, reviewers and change notes maintained?</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depth-section alt">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <h2>研究技术栈与模型治理</h2>
+            <p>专业量化学习不只关心代码是否能跑，更关心数据是否可靠、假设是否清楚、风险是否可解释、版本是否可追踪。</p>
+          </div>
+          <div class="table-wrap knowledge-matrix">
+            <table>
+              <thead><tr><th>层级</th><th>训练内容</th><th>风险问题</th><th>课程产出</th></tr></thead>
+              <tbody>
+                <tr><td>数据层</td><td>价格序列、时间周期、缺失值、异常价格、事件标签。</td><td>样本偏差、数据质量、不同平台报价差异。</td><td>数据检查表与样本说明。</td></tr>
+                <tr><td>信号层</td><td>趋势、波动率、区间突破、过滤条件、信号强度。</td><td>过拟合、参数敏感、只适合单一市场状态。</td><td>信号观察表与假设说明。</td></tr>
+                <tr><td>执行层</td><td>订单类型、仓位、止损、止盈、交易时段、异常处理。</td><td>滑点、点差扩大、流动性不足和平台执行差异。</td><td>EA 执行逻辑图与代码注释。</td></tr>
+                <tr><td>治理层</td><td>版本记录、回测区间、变更原因、复盘结论、暂停规则。</td><td>误把历史测试当成未来保证，忽略策略失效条件。</td><td>策略复盘报告与版本日志。</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <h2>Research Stack and Model Governance</h2>
+            <p>Professional quantitative learning is not only about whether code runs. It asks whether data is reliable, assumptions are clear, risk is explainable and versions are traceable.</p>
+          </div>
+          <div class="table-wrap knowledge-matrix">
+            <table>
+              <thead><tr><th>Layer</th><th>Training Content</th><th>Risk Question</th><th>Course Output</th></tr></thead>
+              <tbody>
+                <tr><td>Data Layer</td><td>Price series, timeframe, missing values, abnormal prices and event labels.</td><td>Sample bias, data quality and quotation differences across platforms.</td><td>Data checklist and sample note.</td></tr>
+                <tr><td>Signal Layer</td><td>Trend, volatility, range break, filters and signal strength.</td><td>Overfitting, parameter sensitivity and dependence on one market regime.</td><td>Signal watchlist and hypothesis note.</td></tr>
+                <tr><td>Execution Layer</td><td>Order types, sizing, stops, targets, trading hours and exception handling.</td><td>Slippage, wider spreads, limited liquidity and execution differences.</td><td>EA logic diagram and code comments.</td></tr>
+                <tr><td>Governance Layer</td><td>Version log, test period, change rationale, review conclusion and pause rules.</td><td>Misreading historical tests as future assurance and ignoring invalidation conditions.</td><td>Strategy review report and version log.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quant-portfolio" class="depth-section alt">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <span class="eyebrow">作品证据链</span>
+            <h2>量化学院最终沉淀的不是“万能策略”，而是专业作品证据</h2>
+            <p>每个项目都应形成可以被导师、同学和未来雇主理解的证据链：代码、研究说明、风险说明、测试记录和复盘结论。</p>
+          </div>
+          <div class="process-rail">
+            <div><span>01</span><strong>研究备忘录</strong><p>说明策略假设、市场逻辑、数据来源、适用场景和失效条件。</p></div>
+            <div><span>02</span><strong>可运行代码</strong><p>保留清晰注释、参数说明、日志输出和错误处理，不只提交截图。</p></div>
+            <div><span>03</span><strong>测试协议</strong><p>记录测试样本、成本假设、样本外观察、参数敏感和基准对照。</p></div>
+            <div><span>04</span><strong>风险披露</strong><p>清楚写出模型不能覆盖的风险，不把历史结果包装成收益承诺。</p></div>
+            <div><span>05</span><strong>复盘表达</strong><p>用专业语言解释为什么保留、修改、暂停或放弃一个策略。</p></div>
+            <div><span>06</span><strong>下一步计划</strong><p>把未解决的问题变成下一轮研究任务，而不是追逐新的指标。</p></div>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <span class="eyebrow">Portfolio Evidence</span>
+            <h2>The Quant Academy should produce professional evidence, not “universal strategies”</h2>
+            <p>Each project should create evidence that instructors, peers and future employers can understand: code, research notes, risk statements, test records and review conclusions.</p>
+          </div>
+          <div class="process-rail">
+            <div><span>01</span><strong>Research Memo</strong><p>Explain hypothesis, market logic, data source, applicable scenario and invalidation condition.</p></div>
+            <div><span>02</span><strong>Runnable Code</strong><p>Keep clear comments, parameter notes, log output and error handling rather than submitting screenshots only.</p></div>
+            <div><span>03</span><strong>Testing Protocol</strong><p>Record samples, cost assumptions, out-of-sample observation, parameter sensitivity and benchmark comparison.</p></div>
+            <div><span>04</span><strong>Risk Disclosure</strong><p>Clearly state risks the model cannot cover; do not package historical results as return promises.</p></div>
+            <div><span>05</span><strong>Review Language</strong><p>Explain professionally why a strategy is retained, modified, paused or abandoned.</p></div>
+            <div><span>06</span><strong>Next Research Plan</strong><p>Turn unresolved questions into the next research task rather than chasing a new indicator.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>课程安排示例</h2>
+          <p>课程可按 4 周营、周末班或一对一形式组织，并根据学员基础调整深度。</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>阶段</th><th>主题</th><th>练习成果</th></tr></thead>
+            <tbody>
+              <tr><td>Week 1</td><td>量化交易基础与 MT5 环境</td><td>完成开发环境与第一个脚本</td></tr>
+              <tr><td>Week 2</td><td>MQL5 语法、指标与订单函数</td><td>写出基础 EA 结构</td></tr>
+              <tr><td>Week 3</td><td>策略回测、参数与风控</td><td>输出回测记录</td></tr>
+              <tr><td>Week 4</td><td>Python 信号与作品展示</td><td>完成课程作品集</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="quant-sources" class="source-section">
+      <div class="section-inner">
+        <div data-lang-panel="zh">
+          <div class="section-head">
+            <span class="eyebrow">公开技术资料</span>
+            <h2>课程内容参考公开技术文档，不代表合作、推荐或收益保证</h2>
+            <p>以下资料用于支撑技术学习方向：MQL5 语言与交易函数、MetaTrader 自动化交易、Python 文档、pandas 数据处理和模型验证原则。所有训练内容仅用于教育与模拟研究。</p>
+          </div>
+          <div class="source-grid">
+            <a href="https://www.mql5.com/en/docs" target="_blank" rel="noopener"><strong>MQL5 官方文档</strong><span>官方语言、交易函数、指标访问和 EA 编程参考。</span></a>
+            <a href="https://www.metatrader5.com/en/automated-trading" target="_blank" rel="noopener"><strong>MetaTrader 5 自动化交易</strong><span>自动化交易、EA 和交易机器人能力的官方介绍。</span></a>
+            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"><strong>Python 官方文档</strong><span>Python 语言、标准库和工程化学习的基础资料。</span></a>
+            <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener"><strong>pandas 官方文档</strong><span>金融时间序列和研究数据表常用的数据处理工具。</span></a>
+            <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank" rel="noopener"><strong>scikit-learn 模型选择</strong><span>交叉验证、样本外测试和模型评估的官方学习资料。</span></a>
+            <a href="traders.html#journal"><strong>交易员训练日志</strong><span>把模型输出连接到风险预算、执行纪律和复盘评分。</span></a>
+          </div>
+        </div>
+        <div data-lang-panel="en">
+          <div class="section-head">
+            <span class="eyebrow">Public Technical References</span>
+            <h2>Course content references public technical documentation; it does not imply partnership, recommendation or return assurance</h2>
+            <p>These references support technical learning: the MQL5 language and trading functions, MetaTrader automated trading, Python documentation, pandas data handling and model-validation principles. All training content is for education and simulation research only.</p>
+          </div>
+          <div class="source-grid">
+            <a href="https://www.mql5.com/en/docs" target="_blank" rel="noopener"><strong>MQL5 Documentation</strong><span>Official reference for language, trading functions, indicator access and EA programming.</span></a>
+            <a href="https://www.metatrader5.com/en/automated-trading" target="_blank" rel="noopener"><strong>MetaTrader 5 Automated Trading</strong><span>Official overview of automated trading, Expert Advisors and trading robots.</span></a>
+            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"><strong>Python Documentation</strong><span>Core reference for Python language, standard library and engineering foundations.</span></a>
+            <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener"><strong>pandas Documentation</strong><span>Common data-handling reference for financial time series and research tables.</span></a>
+            <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank" rel="noopener"><strong>scikit-learn Model Selection</strong><span>Official learning material for cross-validation, out-of-sample testing and model evaluation.</span></a>
+            <a href="traders.html#journal"><strong>Trader Training Journal</strong><span>Connect model output to risk budget, execution discipline and review scoring.</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-inner split">
+        <div><span class="eyebrow">量化学习方向</span><h2>了解量化 EA 学习路径</h2><p>适合希望从 MQL5、MT5 EA 或 Python 研究入门的学习者。</p></div>
+        <form class="contact-panel" data-demo-form>
+          <div class="form-grid">
+            <div class="field"><label for="name">姓名</label><input id="name" required></div>
+            <div class="field"><label for="level">编程基础</label><select id="level"><option>零基础</option><option>会一点 Python</option><option>有交易/EA 经验</option></select></div>
+            <div class="field full"><label for="contact-method">联系方式</label><input id="contact-method" placeholder="微信 / 电话 / 邮件" required></div>
+            <div class="field full"><label for="message">想学习的方向</label><textarea id="message" placeholder="例如：MQL5 EA / Python 回测 / 黄金策略"></textarea></div>
+          </div>
+          <button class="button primary" type="submit">发送学习意向</button>
+          <p class="form-note" data-form-note><span data-lang-panel="zh">学院将根据你的编程基础和学习目标回复，仅用于课程沟通。</span><span data-lang-panel="en">The Academy will respond based on your programming foundation and learning goal, only for course communication.</span></p>
+          <div class="contact-assurance">
+            <div data-lang-panel="zh"><strong>咨询边界</strong>量化课程咨询聚焦技术学习、模拟训练和风险意识，不承诺交易收益，也不提供个人交易指令。</div>
+            <div data-lang-panel="en"><strong>Consultation boundary</strong>Quant course enquiries focus on technical learning, simulation and risk awareness. They do not promise trading returns or provide personal trading instructions.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><a class="brand" href="index.html"><img class="brand-logo-full" src="assets/gm-logo-full.png" alt="Grand Markets" width="900" height="342"><span class="brand-academy">Academy</span></a><p>澳洲金融教育、市场知识普及与量化技术学习平台。</p></div>
+      <div class="footer-links">
+        <div><strong>课程</strong><a href="rg146.html">RG146 学习</a><a href="quant.html">量化 EA 学院</a><a href="traders.html">交易员训练</a></div>
+        <div><strong>内容</strong><a href="knowledge.html">金融知识库</a><a href="events.html">公开课活动</a></div>
+        <div><strong>品牌</strong><span>AFSL 554475</span><span>Grand Markets Group</span></div>
+        <div><strong>联系</strong><a href="#contact">学习评估</a><span>Sydney, Australia</span></div>
+      </div>
+      <p class="risk">风险提示与免责声明：本平台内容仅用于一般金融知识教育与课程信息展示，不构成投资建议、个人财务建议或任何金融产品推荐。自动化交易和回测结果不代表未来表现。</p>
+    </div>
+  </footer>
+  <script src="script.js?v=20260602-enfont03"></script>
+</body>
+</html>
